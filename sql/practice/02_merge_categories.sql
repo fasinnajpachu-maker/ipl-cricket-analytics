@@ -26,4 +26,4 @@ SELECT
         THEN 'Rising Pune Supergiant'
         ELSE team_name
     END AS team_name_clean
-FROM teams;
+FROM teams;  
