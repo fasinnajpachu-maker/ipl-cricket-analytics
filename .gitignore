@@ -1,16 +1,41 @@
-data/raw/
-data/processed/
-
-*.db
-*.csv
-
+# Python virtual environments
 .venv/
 venv/
+env/
 
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
 
+# Jupyter Notebook
 .ipynb_checkpoints/
 
+# Operating system files
 .DS_Store
 Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Database files: ignore all except the IPL database
+*.db
+!data/raw/ipl.db
+
+# Raw data: keep the IPL database, ignore other raw files
+data/raw/*
+!data/raw/ipl.db
+
+# Processed data
+data/processed/
+
+# CSV files
+*.csv
+
+# Keep required project files
+!requirements.txt
+!Dashboard/requirements.txt
+
+# IDE settings
+.vscode/
+.idea/
